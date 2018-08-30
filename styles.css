@@ -1,6 +1,42 @@
 /* Add your custom css here */
 
 body {
-  background: orange;
-  color: white;
+  background: white;
+  color: blue;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 3px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+
+html, body {
+background-color: #000000;
+margin: 10px;
+}
+
+.container > div:nth-child(1n) {
+background-color: #b16815;	
+}
+
+.container > div:nth-child(3n) {
+background-color: #682192;
+}
+
+.container > div:nth-child(2n) {
+    background-color: #465716;
+}
+
+.container > div:nth-child(4n) {
+    background-color: #083742;
 }
